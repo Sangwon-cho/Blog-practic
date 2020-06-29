@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangwon</title>
+    <link rel="stylesheet" href="/normalize.css" />
+    <style>
+      header {
+        background: url(https://i.imgur.com/VwNmRnK.jpg);
+        text-align: center;
+        color: black;
+      }
+      a {
+        color: white;
+      }
+      h1 {
+        font-size: 65px;
+      }
+      img {
+        margin: 50px 0px 0px 0px;
+        border: 10px solid black;
+        border-radius: 20px;
+      }
+      ul {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-evenly;
+      }
+      li {
+        display: inline;
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+      @media (max-width: 525px) {
+        li {
+          display: block;
+        }
+        article {
+          background: black;
+          color: white;
+        }
+      }
+      article {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 525px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://i.imgur.com/l5LKx2P.jpg" />
+      <h1>Blog name</h1>
+      <ul class="bar">
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Best phone</a></li>
+        <li><a href="#">worst phone</a></li>
+      </ul>
+    </header>
+    <article>
+      <h2>IPHONE</h2>
+      <p>
+        The iPhone is a line of touchscreen-based smartphones, designed and
+        marketed by Apple Inc. It is considered to be one of the most important
+        and innovative inventions of the 21st century. All generations of the
+        iPhone use Apple's iOS mobile operating system software
+      </p>
+      <button>Like</button>
+    </article>
+    <article>
+      <h2>GALAXY</h2>
+      <p>
+        Samsung Galaxy (stylised as SAMSUNG Galaxy since 2015[1], previously
+        stylised as Samsung GALAXY; abbreviated as SG) is a series of computing
+        and mobile computing devices designed
+      </p>
+      <button>Like</button>
+    </article>
+    <script>
+      $("button").on("click",function(){
+          alert(It works!);
+      })
+    </script>
+  </body>
+</html>
